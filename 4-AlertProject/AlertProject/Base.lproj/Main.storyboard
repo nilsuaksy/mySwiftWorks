@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3y-WP-Odi">
+                                <rect key="frame" x="72" y="230" width="248" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-5K-vEB">
+                                <rect key="frame" x="72" y="293" width="248" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password check" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-jb-YQK">
+                                <rect key="frame" x="72" y="354" width="248" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFS-lp-jZu">
+                                <rect key="frame" x="133" y="159" width="126" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuV-kS-peT">
+                                <rect key="frame" x="68" y="433" width="256" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SWn-tw-Bxq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fuV-kS-peT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="10A-XP-0Cl"/>
+                            <constraint firstItem="1Bc-jb-YQK" firstAttribute="centerX" secondItem="fuV-kS-peT" secondAttribute="centerX" id="5TG-0k-uF4"/>
+                            <constraint firstItem="Z7a-5K-vEB" firstAttribute="trailing" secondItem="1Bc-jb-YQK" secondAttribute="trailing" id="71M-fe-jN3"/>
+                            <constraint firstItem="gFS-lp-jZu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="D1o-bV-Zhd"/>
+                            <constraint firstItem="O3y-WP-Odi" firstAttribute="top" secondItem="gFS-lp-jZu" secondAttribute="bottom" constant="44" id="EoL-Ks-YHa"/>
+                            <constraint firstItem="Z7a-5K-vEB" firstAttribute="leading" secondItem="1Bc-jb-YQK" secondAttribute="leading" id="Jlj-je-Qbp"/>
+                            <constraint firstItem="gFS-lp-jZu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mhf-ye-gqj"/>
+                            <constraint firstItem="1Bc-jb-YQK" firstAttribute="top" secondItem="Z7a-5K-vEB" secondAttribute="bottom" constant="27" id="VqI-JU-uU4"/>
+                            <constraint firstItem="fuV-kS-peT" firstAttribute="top" secondItem="1Bc-jb-YQK" secondAttribute="bottom" constant="45" id="Wha-oS-PTp"/>
+                            <constraint firstItem="Z7a-5K-vEB" firstAttribute="top" secondItem="O3y-WP-Odi" secondAttribute="bottom" constant="29" id="XfZ-EK-Th9"/>
+                            <constraint firstItem="O3y-WP-Odi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="b2Y-ui-ATb"/>
+                            <constraint firstItem="gFS-lp-jZu" firstAttribute="centerX" secondItem="O3y-WP-Odi" secondAttribute="centerX" id="cge-eq-4bS"/>
+                            <constraint firstItem="gFS-lp-jZu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="dcg-Bp-lvS"/>
+                            <constraint firstItem="O3y-WP-Odi" firstAttribute="trailing" secondItem="Z7a-5K-vEB" secondAttribute="trailing" id="pYA-hE-M6o"/>
+                            <constraint firstItem="O3y-WP-Odi" firstAttribute="leading" secondItem="Z7a-5K-vEB" secondAttribute="leading" id="vPa-2M-6P0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordCheckText" destination="1Bc-jb-YQK" id="4OU-6d-CJm"/>
+                        <outlet property="passwordText" destination="Z7a-5K-vEB" id="jMb-PA-LDy"/>
+                        <outlet property="usernameText" destination="O3y-WP-Odi" id="BPM-jE-2iD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
